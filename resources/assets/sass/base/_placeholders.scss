@@ -1,0 +1,31 @@
+// Covering Background Images
+// @extend %bg-image;
+%bg-image {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include vendor-prefix(background-size, cover);
+}
+
+// Clear list
+// @extend %list-none;
+%list-none {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+%heading {
+    @include font($header-font, normal, 400);
+    margin: 0 0 25px;
+    line-height: 1.5;
+    text-transform: none;
+    color: $color-80;
+}
+
+%link-property {
+    @include links($color-link, $color-visited, $color-link-hover, $color-active);
+    &:fucos {
+        outline: none;
+    }
+}

@@ -1,0 +1,7 @@
+.social-icons {
+    a {
+        @include inline-block;
+        vertical-align: middle;
+        margin: 0 4px;
+    }
+}

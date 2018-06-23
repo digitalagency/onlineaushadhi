@@ -1,0 +1,77 @@
+.navbar {
+    min-height: 20px;
+    margin-bottom: 0
+}
+
+.navbar-nav {
+    margin-top: 4px;
+}
+
+.navbar-brand {
+    padding: 0;
+    height: auto;
+    img {
+        max-width: 85%;
+    }
+}
+
+.navbar-right {
+    margin-right: 0;
+    @include breakpoint(xs) {
+        float: right;
+        margin-right: 0;
+    }
+    .dropdown-menu {
+        left: auto;
+        right: 0;
+        margin-top: 16px;
+        @include breakpoint(xs) {
+            margin-top: 18px;
+        }
+        li {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.nav-pills {
+    &>li {
+        &>a {
+            border-radius: 25px;
+            padding: 12px 20px;
+            @include font-size(1.3);
+            line-height: 1;
+            @include links($color-70, $color-70, $color-brand-primary, $color-active);
+            &:hover {
+                background: none;
+            }
+        }
+        &.active {
+            &>a,
+            &>a:focus,
+            &>a:hover {
+                background-color: $color-brand-primary;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.collapse-icon {
+    /*display: inline-block;*/
+    @include centerer(false, true);
+    right: 0;
+    line-height: 1;
+    a {
+        @include links($color-brand-primary, $color-brand-primary, $color-brand-primary, $color-brand-primary) i {
+            @include font-size(1.8);
+        }
+    }
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    border-color: $link-color;
+    background-color: transparent;
+}

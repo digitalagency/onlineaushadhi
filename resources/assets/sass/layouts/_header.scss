@@ -1,0 +1,78 @@
+header {
+    @at-root .#{&}--main {
+        width: 100%;
+        position: fixed;
+        top: auto;
+        padding: 0;
+        z-index: 100;
+    }
+    @at-root .#{&}__info {
+        padding: 10px 35px;
+        @include font-size(1.3);
+        .list-inline {
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        @include breakpoint(sm) {
+            padding: 10px 0;
+        }
+        @include breakpoint(xs) {
+            padding: 15px 0;
+        }
+    }
+     @at-root .#{&}__brand-wrap {
+         padding: 15px 0;
+         @include breakpoint(sm) {
+             padding: 15px 0;
+         }
+         @include breakpoint(xs) {
+             padding: 15px 0;
+         }
+     }
+    .navbar-right {
+        margin: 0;
+        @include breakpoint(xs) {
+            float: none;
+            text-align: center;
+        }
+    }
+}
+
+.company-account {
+    text-align: right;
+}
+
+.company-info {
+    a {
+        .oa-mail {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+    @include breakpoint(xs) {
+        text-align: center;
+        margin-bottom: 15px!important;
+    }
+}
+
+.cart-block {
+    //background-color: black(.5);
+    @include rounded(4px);
+    @include font-size(1.5);
+    line-height: 1;
+    &:hover {
+        //background-color: black(.95);
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    i {
+        @include font-size(2);
+        vertical-align: middle;
+    }
+    .badge {
+        background-color: $color-info;
+        padding: 4px 7px;
+    }
+}

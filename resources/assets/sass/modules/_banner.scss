@@ -1,0 +1,24 @@
+#banner {
+    @include linear-gradient-l2br(135deg, #1E3C72, #2A5298);
+    height: 375px;
+    position: relative;
+    overflow: hidden;
+    .img-1,
+    .img-2 {
+        @include opacity(.75);
+        img {
+            width: 100%;
+        }
+    }
+    .img-1 {
+        width: 100%;
+        @include absPosition(auto, auto, -65px, 0);
+        z-index: 1;
+        @include breakpoint(xs) {
+            bottom: 0;
+        }
+    }
+    @include breakpoint(xs) {
+        height: 300px;
+    }
+}

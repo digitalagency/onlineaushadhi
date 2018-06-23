@@ -1,0 +1,52 @@
+.service-wrap {
+    padding: 20px 0 40px;
+    .thumbnail {
+        border: none;
+        margin: 0;
+        figure {
+            width: 75px;
+            height: 75px;
+            background-color: $color-brand-secondary;
+            color: $color-white;
+            @include center-block;
+            margin-bottom: 10px;
+            padding: 20px;
+            @include rounded(100px);
+            i {
+                @include font-size(3.5);
+            }
+        }
+        .caption {
+            p {
+                height: 68px;
+                @include text-truncate-multiple;
+                -webkit-line-clamp: 3;
+            }
+        }
+        @include breakpoint(xs) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.service-wrap-inner {
+    .media {
+        margin-bottom: 35px;
+        figure {
+            width: 75px;
+            height: 75px;
+            background-color: $color-brand-secondary;
+            color: $color-white;
+            @include center-block;
+            margin-bottom: 10px;
+            padding: 20px;
+            @include rounded(100px);
+            i {
+                @include font-size(3.5);
+            }
+        }
+        .title {
+            color: $color-90;
+        }
+    }
+}

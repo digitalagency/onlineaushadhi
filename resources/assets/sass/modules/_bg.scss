@@ -1,0 +1,19 @@
+.bg {
+    @at-root #{&}--white {
+        background-color: $bg-white;
+    }
+    @at-root #{&}--primary {
+        background-color: $bg-primary;
+        color: $color-white;
+    }
+    @at-root #{&}--secondary {
+        background-color: $bg-secondary;
+        color: $color-white;
+        a {
+            @include links($color-link-secondary, $color-link-secondary, $color-white, $color-link-secondary);
+        }
+    }
+    @at-root #{&}--alternative {
+        background-color: $bg-alternative;
+    }
+}

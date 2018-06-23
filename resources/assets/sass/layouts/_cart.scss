@@ -1,0 +1,18 @@
+.product-img {
+    .no-med {
+        max-width: 85px;
+    }
+}
+
+.btn-del {
+    background-color: transparent;
+    border: none;
+    @include font-size(2.4);
+    color: $color-danger;
+    padding: 0;
+    &:hover,
+    &:focust {
+        background-color: transparent !important;
+        border: none !important;
+    }
+}

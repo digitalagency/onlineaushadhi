@@ -1,0 +1,72 @@
+	@charset 'UTF-8';
+
+	// Table of Contents
+	//=================================
+	// Vendors
+	// Base
+	// Modules
+	// Layouts
+	// Themes [No Themes for Small Projects]
+
+	// External
+	@import 'vendors/animate',
+			'vendors/bootstrap',
+			'vendors/oa-icons';
+
+	//Base
+	@import 'base/variables',
+			'base/functions',
+			'base/mixins',
+			'base/breakpoint',
+			'base/typography',
+			'base/presets',
+			'base/placeholders',
+			'base/print';
+
+	// Modules
+	@import 'modules/bg',
+			'modules/gutter',
+			'modules/buttons',
+			'modules/banner',
+			'modules/carousel',
+			'modules/forms',
+			'modules/jquery.material.form',
+			'modules/graphics',
+			'modules/nano',
+			'modules/nav',
+			'modules/off-canvas-nav',
+			'modules/dropdown',
+			'modules/popup',
+			'modules/masonry',
+			'modules/preloader',
+			'modules/social',
+			'modules/tables',
+			'modules/tabpanel',
+			'modules/breadcrumb',
+			'modules/thumbnails',
+			'modules/paginations',
+			'modules/modals',
+			'modules/title',
+			'modules/sidebar',
+			'modules/steps-wrap',
+			'modules/list',
+			'modules/common';
+
+	// Layouts
+	@import 'layouts/wrap',
+			'layouts/header',
+			'layouts/footer',
+			'layouts/content',
+			'layouts/search-wrap',
+			'layouts/how-to-order',
+			'layouts/stats-wrap',
+			'layouts/service-wrap',
+			'layouts/testimonials',
+			'layouts/blog',
+			'layouts/contact',
+			'layouts/client-wrap',
+			'layouts/connection',
+			'layouts/products',
+			'layouts/cart',
+			'layouts/account-wrap',
+			'layouts/payment-wrap';

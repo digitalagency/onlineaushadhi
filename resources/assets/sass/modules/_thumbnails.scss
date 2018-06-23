@@ -1,0 +1,28 @@
+.thumbnail {
+    @at-root #{&}--no-border {
+        border: none;
+        padding: 0;
+    }
+    img {
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+    }
+    .caption {
+        padding: 20px 0 0;
+    }
+    @include breakpoint(xs) {
+        margin-bottom: 30px;
+    }
+    &__products {
+        img {
+            max-width: 175px;
+        }
+        .price {
+            @include font-size(2);
+            font-weight: 600;
+            color: $color-brand-secondary;
+        }
+    }
+}
+

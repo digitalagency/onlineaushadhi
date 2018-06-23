@@ -1,0 +1,9 @@
+.pagination {
+    &>li {
+        @include font-size(1.6);
+        i {
+            vertical-align: middle;
+            @include font-size(1.3);
+        }
+    }
+}

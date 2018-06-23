@@ -1,0 +1,107 @@
+.search-wrap {
+    padding: 20px 0;
+    @include breakpoint(md) {
+        padding: 20px 0;
+    }
+    @include breakpoint(sm) {
+        padding: 20px 0 10px;
+        .form-inline {
+            .form-group {
+                display: block;
+                margin: 0 0 10px !important;
+                padding: 0;
+                .input-group {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include breakpoint(xs) {
+        padding: 20px 0;
+    }
+    .search-input {
+        border: 1px solid $color-brand-secondary;
+        width: 300px;
+        height: 50px;
+        padding: 12px 12px 11px;
+        @include rounded(4px 0 0 4px);
+        @include breakpoint(md) {
+            width: 275px;
+        }
+        @include breakpoint(sm) {
+            width: 100%;
+        }
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+    }
+    .input-group-addon {
+        background-color: $color-brand-secondary;
+        border: none;
+        padding: 0;
+        .btn {
+            background-color: $color-brand-secondary;
+            color: $color-white;
+            padding: 10px 15px;
+        }
+    }
+    @at-root #{&}--content {
+        .search-input {
+            width: 400px;
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+            @include breakpoint(xs) {
+                width: 100%;
+            }
+        }
+        .input-group-addon {
+            .btn {
+                padding: 10px 25px;
+            }
+        }
+        .file-upload {
+            padding: 15px 35px;
+        }
+    }
+}
+
+.file-upload {
+    height: 50px;
+    font-weight: 600;
+    padding: 15px 20px;
+    @include breakpoint(md) {
+        padding: 15px;
+    }
+    @include breakpoint(sm) {
+        width: 100%;
+    }
+    @include breakpoint(xs) {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    i {
+        vertical-align: middle;
+    }
+}
+
+.form-group {
+    @include breakpoint(xs) {
+        margin: 0 0 10px;
+    }
+}
+
+.product-list {
+    &__border {
+        border-bottom: 1px solid $color-border;
+        padding-bottom: 35px;
+    }
+    .price {
+        @include font-size(2.5);
+        font-weight: 600;
+        color: $color-brand-secondary;
+        display: block;
+        line-height: 1;
+    }
+}

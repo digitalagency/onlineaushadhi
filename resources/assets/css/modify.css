@@ -1,0 +1,104 @@
+ul.ui-autocomplete{
+    margin: 0;
+    padding:0;
+    border-bottom:1px solid #eee;
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+}
+ul.ui-autocomplete li{
+    list-style: none;
+    background: #fff;
+    padding:10px 20px;
+    border-bottom:1px solid #eee;
+}
+
+.ajax-upload-dragdrop {
+    width: 100% !important;
+    cursor: pointer;
+}
+
+.ajax-file-upload {
+    cursor: pointer!important;
+    width: 130px;
+    height: 35px!important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    padding: 8px 10px 4px 50px !important;
+}
+
+.ajax-file-upload:before {
+    content: '\e90f';
+    position: absolute;
+    font-family: 'onlineaushadhi';
+    font-size: 15px;
+    color: #fff;
+    top: 8px;
+    left: 22px;
+}
+
+.ajax-file-upload input[type="file"] {
+    cursor: pointer!important;
+    width: 175px!important;
+    height: 35px!important;
+}
+
+
+.ajax-file-upload-statusbar {
+    width: 100%!important;
+}
+
+.ajax-file-upload-preview {
+    max-width: 120px!important;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ajax-file-upload-progress {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ajax-file-upload-filename {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 25px;
+    width: 375px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.ajax-file-upload-cancel {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.ajax-file-upload-cancel:after {
+        content: '\e900';
+        background-color: red;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        font-family: 'onlineaushadhi';
+        font-size: 15px;
+        text-indent: 0;
+        color: #fff;
+        border-radius: 4px;
+        padding-top: 5px;
+        text-align: center;
+}
+
+.ajax-file-upload-container {
+    margin-top: 15px;
+}
+
+.ajax-file-upload-statusbar {
+    margin-bottom: 1px;
+    background: #eee;
+    padding: 10px;
+}
+
+.relatedProducts .masonary__grid {
+    width: 20%;
+}

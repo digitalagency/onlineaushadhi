@@ -1,0 +1,22 @@
+.dropdown-menu {
+    min-width: 175px;
+    border: 0;
+    padding: 0;
+    &>li {
+        border-bottom: 1px solid $color-10;
+        &>a {
+            background-color: $color-white;
+            color: $color-90;
+            padding: 10px 20px;
+            @include word-wrap;
+            text-align: right;
+            @include links($color-90, $color-90, $color-white, $color-90);
+            &:hover {
+                background: $color-brand-secondary;
+            }
+        }
+        &:last-child {
+            border: 0;
+        }
+    }
+}
